@@ -1,0 +1,43 @@
+@import './header';
+@import './footer';
+@import './partials/variables';
+@import './partials/form';
+body {
+  font-family: 'Josefin Sans', sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.active {
+  color: #37b80e !important;
+}
+
+.typed-cursor {
+  animation: flash 1s ease-in-out infinite;
+  font-size: 2.5rem;
+}
+
+.partners {
+  background: rgba(0, 0, 0, 0.03);
+  .partner {
+    filter: grayscale(1);
+    height: 40px;
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}

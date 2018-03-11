@@ -1,0 +1,18 @@
+.header.bg-transparent.py-3.px-8.flex.flex-wrap.justify-between.pin-l.w-full
+    .brand.mr-4(class="lg:ml-4")
+        a(href="/")
+            h4.brand-name.text-2xl.text-white Lansan
+            //- img(src="http://res.cloudinary.com/hackafro/image/upload/v1517327719/nav-logo_auzpxx.png", alt="")
+    div(class="block lg:hidden")
+        button.border.border-green.rounded.py-2.px-4.menu-button
+            i.fa.fa-bars.text-green.opacity-75.text-2xl
+    .nav-items.dropdown-nav(class="hide w-full lg:w-auto lg:mr-8 lg:block")
+        ul.list-reset.inline(class="lg:flex")
+            li.inline.mx-4(class="lg:block")
+                a.uppercase.text-sm.nav-item(href="/") Home
+            li.inline.mx-4(class="lg:block")
+                a.uppercase.text-sm.nav-item(href="/contact") Contact Us
+            li.inline.mx-4(class="lg:block")
+                a.uppercase.text-sm.nav-item(href="/about-us") About Us
+
+
