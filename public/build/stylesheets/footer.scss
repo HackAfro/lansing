@@ -1,3 +1,17 @@
 footer {
-    background: linear-gradient(282.03deg, #4B4B4D -45.65%, #37B80E 54.34%);
+    background: rgb(27, 26, 26);
+
+    .social-icon{
+        width: 40px;
+        height: 40px;
+        background: rgb(51, 49, 49);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 45px;
+        cursor: pointer;
+
+        i{
+            font-size: 20px;
+        }
+    }
 }
