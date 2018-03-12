@@ -1,18 +1,5 @@
 @import './layout';
-
-$cloudinary_urls: (
-  'http://res.cloudinary.com/hackafro/image/upload/c_scale,w_1979/v1517327728/our-team_fyhdga.jpg',
-  'https://res.cloudinary.com/hackafro/image/upload/c_scale,w_1676/v1517327727/workers_lheihe.jpg',
-  'http://res.cloudinary.com/hackafro/image/upload/v1517327724/tractor_fxr4wf.jpg',
-  'http://res.cloudinary.com/hackafro/image/upload/v1517327723/spraying_fcp5hl.jpg'
-);
-
-@mixin image-style($url) {
-  background: linear-gradient(0deg, #4a4646, #4a4646), url($url), no-repeat;
-  background-blend-mode: multiply;
-  background-size: cover;
-  height: 100%;
-}
+@import './partials/keyframes';
 
 .hero-section {
   min-height: 95vh;
@@ -30,34 +17,45 @@ $cloudinary_urls: (
   .cta-holder {
     left: 50%;
     bottom: 20px;
+    animation: pulse 1s infinite ease-in-out;
     .cta {
       cursor: pointer;
       border-radius: 50%;
       text-align: center;
       padding: 25px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        i {
+          animation: move-down 0.5s;
+          animation-iteration-count: 2;
+        }
+      }
     }
   }
 }
 
-.short-underline{
+.short-underline {
   border-bottom: 4px solid green;
   width: 50px;
-  margin-top: 5px;
+  margin: 5px unset;
 }
-
 
 .operation {
   margin: 3rem 0;
   padding: 1rem 20px;
-  &-icon-holder{
+  &-icon-holder {
     padding: 10px;
   }
-  &-icon-holder:nth-child(2){
+  &-icon-holder:nth-child(2) {
     margin-bottom: 100px;
   }
   &-icon {
-    width: 90%;
-    height: 300px;
+    width: 100%;
+    height: 250px;
     border-radius: 3px;
     &:hover {
       transform: scale(1.06);
@@ -65,25 +63,30 @@ $cloudinary_urls: (
   }
 }
 
-.projects{
-  .project-icon{
+.projects {
+  .project-icon {
     width: 70%;
-    height: 350px;
+    height: 300px;
+  }
+
+  .view-project {
+    &:hover {
+      i {
+        animation: move-forward 0.5s;
+        animation-iteration-count: 2;
+      }
+    }
   }
 }
 
-.testimonials {
-  background: url('http://res.cloudinary.com/hackafro/image/upload/v1517327760/testi-bg_ed86yv.svg');
-  margin: 3rem 0;
-  .testi-image {
-    margin-left: 10%;
-    width: 120px;
-    height: 120px;
-    margin-top: -15%;
+.service {
+  img {
+    width: 250px;
+    height: 200px;
   }
-  .slide-toggles {
-    bottom: -15px;
-    right: 40px;
+  hr {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
