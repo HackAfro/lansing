@@ -1,3 +1,17 @@
+$cloudinary_urls: (
+  'http://res.cloudinary.com/hackafro/image/upload/c_scale,w_1979/v1517327728/our-team_fyhdga.jpg',
+  'https://res.cloudinary.com/hackafro/image/upload/c_scale,w_1676/v1517327727/workers_lheihe.jpg',
+  'http://res.cloudinary.com/hackafro/image/upload/v1517327724/tractor_fxr4wf.jpg',
+  'http://res.cloudinary.com/hackafro/image/upload/v1517327723/spraying_fcp5hl.jpg'
+);
+
+@mixin image-style($url) {
+  background: linear-gradient(0deg, #4a4646, #4a4646), url($url), no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 100%;
+}
+
 .leading-md {
     line-height: 1.5;
 }
