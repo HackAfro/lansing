@@ -14,10 +14,10 @@ block content
         p.font-thin.text-lg.opacity-75 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi est ut quam minus tenetur doloribus dolorum similique facilis laborum quisquam omnis tempora animi sed, iusto laboriosam inventore doloremque consequatur nulla.
     div.my-6.absolute.cta-holder
       button.cta.shadow-md.text-center.text-green-dark.px-10.py-10.bg-white.uppercase.cursor-pointer.font-extrabold 
-        i.fa.fa-chevron-down.text-sm
+        i.fa.fa-chevron-down.text-base
           
   section.operation.pt-8.mb-8
-    .flex.flex-wrap.items-center.mx-auto(class="w-full mx-auto lg:w-3/4")
+    .flex.flex-wrap.items-center.mx-auto(class="w-full mx-auto lg:w-4/5")
       .operation-icon-holder.flex.flex-col.items-center.text-center(class="w-full lg:w-1/3")
         img.operation-icon(src="/display-img.JPG", alt="")
       
@@ -27,16 +27,16 @@ block content
       .operation-icon-holder.flex.flex-col.items-center.text-center(class="w-full lg:w-1/3")
         img.operation-icon(src="/display-img-3.JPG", alt="")
 
-    hr.short-underline    
+    hr.short-underline.mx-auto    
     h2.font-extrabold.uppercase.text-center.text-lg What We Do
     div(class="md:w-3/5 lg:w-2/5 text-center mx-auto")
       p.text-base.opacity-75.mt-8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates incidunt doloremque odit nihil, iure reprehenderit maxime quis? Sequi aperiam cum natus vero hic repellendus consectetur laudantium, quasi sit, maiores quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, enim quisquam esse pariatur placeat saepe consectetur voluptatem neque reprehenderit. Quibusdam, amet saepe necessitatibus dolorem expedita at dolore! Earum, nisi quibusdam.
       button.bg-green-dark.px-6.py-6.text-semibold.uppercase.text-white.text-sm.mt-6.tracking-normal.cursor-pointer Get to know us
 
   section.projects.pt-8.mb-12
-    hr.short-underline    
+    hr.short-underline.mx-auto    
     h2.font-extrabold.uppercase.text-center.text-lg.mb-8 Explore Our Projects
-    .flex.flex-wrap.items-center.mx-auto.mb-8(class="w-full mx-auto lg:w-3/4")
+    .flex.flex-wrap.items-center.mx-auto.mb-8(class="w-full mx-auto lg:w-4/5")
       .project-icon-holder.flex.flex-col.items-center.text-center(class="w-full lg:w-1/2")
         img.project-icon(src="/display-img.JPG", alt="")
       
@@ -45,17 +45,17 @@ block content
           h1.opacity-75.mb-4 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum exercitationem in cum itaque quam repellat modi nam illo inventore aperiam corrupti esse odit facere explicabo, blanditiis, asperiores fuga ipsum repellendus.
 
-          div.flex.items-center.mt-3
+          div.flex.items-center.mt-3.view-project
             i.fa.fa-chevron-right.mr-3.text-green-dark
             a.text-green(class="hover:underline" href="") View Project
 
-    .flex.flex-wrap.items-center.mx-auto(class="w-full mx-auto lg:w-3/4")
+    .flex.flex-wrap.items-center.mx-auto(class="w-full mx-auto lg:w-4/5")
       .text-holder(class="w-full lg:w-1/2")
         div(class="mx-auto w-3/4")  
           h1.opacity-75.mb-4 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum exercitationem in cum itaque quam repellat modi nam illo inventore aperiam corrupti esse odit facere explicabo, blanditiis, asperiores fuga ipsum repellendus.
           
-          div.flex.items-center.mt-3
+          div.flex.items-center.mt-3.view-project
             i.fa.fa-chevron-right.mr-3.text-green-dark
             a.text-green(class="hover:underline" href="") View Project
 
@@ -67,15 +67,31 @@ block content
   section.services.py-8
     div.py-4.px-4(class="w-full mx-auto md:w-1/2 lg:w-3/4")
       hr.short-underline
-      h2.font-extrabold.uppercase.text-lg.my-4.text-center Our Services
-      p.text-center.opacity-75.mt-3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eum sint, ipsum distinctio autem
-      .bg-white.flex.mx-auto.relative.max-w-xs
+      h2.font-extrabold.uppercase.text-lg.mt-4.text-center Our Services
+      p.text-center.opacity-50.mt-3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eum sint, ipsum distinctio autem
+      .bg-white.flex.service-list
+        div(class="lg:w-1/3 p-4 flex flex-col service")
+          img.my-4.rounded-r-lg.rounded-tl-lg(src="/display-img.JPG", alt="")
+          h4.uppercase Lorem Ipsum
+          hr.short-underline
+          p.opacity-50.text-sm Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum expedita repellat vero, ea aliquid fugiat, eaque ex consequatur officia optio facilis quia possimus nam dolorum deserunt ipsa harum, culpa asperiores.
+        div(class="lg:w-1/3 p-4 flex flex-col service")
+          img.my-4.rounded-r-lg.rounded-tl-lg(src="/display-img-2.JPG", alt="")
+          h4.uppercase Lorem Ipsum
+          hr.short-underline
+          p.opacity-50.text-sm Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum expedita repellat vero, ea aliquid fugiat, eaque ex consequatur officia optio facilis quia possimus nam dolorum deserunt ipsa harum, culpa asperiores.
+        div(class="lg:w-1/3 p-4 flex flex-col service")
+          img.my-4.rounded-r-lg.rounded-tl-lg(src="/display-img-3.JPG", alt="")
+          h4.uppercase Lorem Ipsum
+          hr.short-underline
+          p.opacity-50.text-sm Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum expedita repellat vero, ea aliquid fugiat, eaque ex consequatur officia optio facilis quia possimus nam dolorum deserunt ipsa harum, culpa asperiores.
 
         
 
   section.contact.mb-8
-    h2.font-extrabold.uppercase.text-center.text-sm Contact Us
-    
+    hr.short-underline
+    h2.font-extrabold.uppercase.text-lg.mt-4.text-center Contact Us
+        
     .flex.flex-wrap.px-8(class="w-full lg:w-4/5 lg:mx-auto")
       div(class="w-full lg:w-3/5")
         h2.uppercase.font-extrabold.my-4.text-sm.text-center Send us a Message
@@ -84,15 +100,15 @@ block content
           .alert.hidden.mx-auto.bg-black.py-3.px-6.text-xs.font-bold.text-white.rounded.relative.my-3(class="w-3/4")
             p.inline.message 
             i.fa.fa-close.absolute.cursor-pointer.inline.text-white.ml-4.close-alert  
-          div.flex.flex-wrap.mb-8 
+          div.flex.flex-wrap.mb-6
             div(class="w-full px-4 py-4 mb-8 md:w-1/2 md:mb-0 lg:w-1/2 lg:mb-0 ")
-              input.border-b-2.border-grey.w-full.py-3.px-6.rounded-none(type="text", class="focus:border-green", id="name" placeholder="Your Name" name="name" required)
+              input.border-2.border-grey.w-full.py-3.px-6.rounded(type="text", class="focus:border-green", id="name" placeholder="Your Name" name="name" required)
             div(class="w-full px-4 py-4 md:w-1/2 lg:w-1/2")
-              input.border-b-2.border-grey.w-full.py-3.px-6.rounded-none(type="email", class="focus:border-green", id="email" placeholder="Your Email" name="email" required)
+              input.border-2.border-grey.w-full.py-3.px-6.rounded(type="email", class="focus:border-green", id="email" placeholder="Your Email" name="email" required)
           div(class="px-4 py-4")     
-            textarea.border-b-2.border-grey.w-full.py-3.px-4.rounded-none(class="focus:border-green", placeholder="Your Message" id="message" name="message" required)
+            textarea.border-2.border-grey.w-full.py-3.px-4.rounded(class="focus:border-green", rows="4" placeholder="Your Message" id="message" name="message" required)
           .text-center.mt-3
-            button.rounded.text-white.text-center.px-4.py-3.bg-green.shadow.text-xs.uppercase.font-extrabold(class="hover:bg-green-light" type="submit") Send Message
+            button.text-white.text-center.px-4.py-4.bg-green-dark.text-xs.uppercase.font-extrabold(class="hover:bg-green-light" type="submit") Send Message
       div(class="w-full flex flex-col items-center text-center lg:w-1/3 lg:items-start lg:text-left").contact-details
         div
           h2.text-sm.font-extrabold.text-grey.uppercase.my-3 Call Us
@@ -100,15 +116,9 @@ block content
         div.mt-6
           h2.text-sm.font-extrabold.text-grey.uppercase.my-3 Visit Us
           p.text-xs.font-extrabold.uppercase.opacity-75.leading-md
-            | No 84 Afaha Eket Road, #[br]
-            | Eket, Akwa Ibom State
-        div.mt-6
-          h2.text-sm.font-extrabold.text-grey.uppercase.my-3 Like/Follow Us
-          p.text-xs.font-extrabold.uppercase.opacity-75.leading-md.mb-4 #[i.fa.fa-twitter.mr-4] @MeadowFoodsNg
-          p.text-xs.font-extrabold.uppercase.opacity-75.leading-md #[i.fa.fa-facebook.mr-4] @MeadowFoodsNig
+            | Lorem ipsum, Darum town #[br]
+            | Blossom, Florida.
       
-  include ./partials/partners
-
 block scripts
   script(src="http://code.jquery.com/jquery-3.3.1.min.js")
   script(src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js")
